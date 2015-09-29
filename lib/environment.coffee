@@ -7,6 +7,7 @@ module.exports =
 class Environment
   constructor: (environment) ->
     @environment = environment
+    @environment.GO15VENDOREXPERIMENT = '1'
     
   Clone: ->
     env = _.clone(@environment)
